@@ -5,11 +5,11 @@ function ReviewsContainer({movies}) {
     return (
         <main>
             <ul>
-                {movies.map((movie) => {<ReviewCard 
+                {movies.map((movie) => (<ReviewCard 
                 key={movie.id}
                 movie={movie}
                 />
-                })}
+                ))}
             </ul>
         </main>
     )
