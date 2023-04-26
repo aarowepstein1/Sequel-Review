@@ -1,0 +1,29 @@
+{
+    "reviews" : [
+        {
+            "id": 1,
+            "movie" : "Top Gun Maverick",
+            "image" : "images/Top Gun Maverick.jpg",
+            "synopsis" : "After more than 30 years of service as one of the Navy's top aviators, Pete \"Maverick\" Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him. Training a detachment of graduates for a special assignment, Maverick must confront the ghosts of his past and his deepest fears, culminating in a mission that demands the ultimate sacrifice from those who choose to fly it.",
+            "rating" : "Great sequel, worth watching",
+            "score" : "4 out of 5"
+        },
+        {
+            "id": 2,
+            "movie" : "Glass Onion",
+            "image" : "images/Glass Onion.jpg",
+            "syopsis" : "Tech billionaire Miles Bron invites his friends for a getaway on his private Greek island. When someone turns up dead, Detective Benoit Blanc is put on the case.",
+            "rating" : "If you liked the first one you will like this one. The first one is better in my opinion.",
+            "score" : "3 out of 5"
+        },
+        {
+            "id": 3,
+            "movie" : "Avatar: The Way of Water",
+            "image" : "images/Avatar The Way of The Water.jpg",
+            "syopsis" : "Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.",
+            "rating" : "Awesome effects, better plot, and there isn't a new bad guy.",
+            "score" : "3 out of 5"
+        }
+    ]
+    
+}
