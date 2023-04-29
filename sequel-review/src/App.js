@@ -4,6 +4,7 @@ import ReviewsContainer from './ReviewsContainer';
 import {Route, Switch} from "react-router-dom";
 import Navbar from './Navbar';
 import Home from './Home';
+import NewReview from './NewReview';
 
 
 function App() {
@@ -19,11 +20,14 @@ function App() {
     <div>
       <Navbar/>
       <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
         <Route path="/reviews">
           <ReviewsContainer movies={movies}/>
+        </Route>
+        <Route path="/newReview">
+          <NewReview />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
     </div>
