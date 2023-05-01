@@ -16,15 +16,19 @@ function App() {
     .then(movies => setMovies(movies))
   }, [])
 
+  function handleAddReview(newReview) {
+    setMovies([...movies, newReview])
+  }  
+
   return (
-    <div>
+    <div id='app'>
       <Navbar/>
       <Switch>
         <Route path="/reviews">
           <ReviewsContainer movies={movies}/>
         </Route>
         <Route path="/newReview">
-          <NewReview />
+          <NewReview onAddReview={handleAddReview}/>
         </Route>
         <Route path="/">
           <Home />

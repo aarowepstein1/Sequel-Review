@@ -5,13 +5,13 @@ function Navbar() {
     return (
        <div id="navbar">
         <NavLink style={{marginRight: "10px"}} to="/">
-        Home
+          Home
         </NavLink>
-        <NavLink style={{marginRight: "10px"}} to="/Reviews">
-            Reviews
+        <NavLink style={{marginRight: "10px"}} to="/reviews">
+          Reviews
         </NavLink>
         <NavLink style={{marginRight: "10px"}} to="/newReview">
-        New Review
+          New Review
         </NavLink>   
 
        </div> 
