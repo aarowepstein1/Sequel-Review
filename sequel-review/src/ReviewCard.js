@@ -9,10 +9,10 @@ function ReviewCard({movie}) {
     return(
         <li id="review">
           <div>
-            <img onClick={handleClick} src={movie.image} alt={movie.title}/>
-            <span>{`${movie.score}/5`}</span>
+            <img id="poster" onClick={handleClick} src={movie.image} alt={movie.title}/>
+            <span id="score">{`${movie.score}/5`}</span>
           </div>
-          <strong>{movie.title}</strong>
+          <h3>{movie.title}</h3>
           {showDetails ? <div id="details">
             <p>{movie.synopsis}</p>
             <p>{movie.review}</p>

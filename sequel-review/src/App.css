@@ -30,6 +30,8 @@ body {
     background-color: bisque;
     
 }
-h1 {
-    
-}
+.home {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
