@@ -10,7 +10,7 @@ function Navbar() {
         <NavLink style={{marginRight: "10px"}} to="/reviews">
           Reviews
         </NavLink>
-        <NavLink style={{marginRight: "10px"}} to="/newReview">
+        <NavLink style={{marginRight: "10px"}} to="/reviews/new">
           New Review
         </NavLink>   
 

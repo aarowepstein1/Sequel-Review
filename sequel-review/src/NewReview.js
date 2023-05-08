@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import {useHistory} from "react-router-dom";
 
 function NewReview({ onAddReview }) {
     const [title, setTitle] = useState("")
@@ -7,7 +7,7 @@ function NewReview({ onAddReview }) {
     const [synopsis, setSynopsis] = useState("")
     const [review, setReview] = useState("")
     const [score, setScore] = useState(0)
-    
+    const history = useHistory();
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -33,6 +33,7 @@ function NewReview({ onAddReview }) {
         setSynopsis('')
         setReview('')
         setScore(null)
+        history.push("/reviews")
     }
     
     return(
@@ -41,25 +42,25 @@ function NewReview({ onAddReview }) {
             <form id="form" onSubmit={handleSubmit}>
                 <div>
                     <label>Movie Title:</label>
-                    <input type="text" name="title" onChange={(e) => setTitle(e.target.value)}></input>
+                    <input type="text" name="title" value={title} onChange={(e) => setTitle(e.target.value)}></input>
                 </div>
                 <div>
                     <label>Movie Poster Link:</label>
-                    <input type="text" name="image" onChange={(e) => setImage(e.target.value)}></input>
+                    <input type="text" name="image" value={image} onChange={(e) => setImage(e.target.value)}></input>
                 </div>
                 <div>
                     <label>Movie Synopsis:</label>
                     <br></br>
-                    <textarea type="text" name="synopsis" onChange={(e) => setSynopsis(e.target.value)}></textarea>
+                    <textarea type="text" name="synopsis" value={synopsis} onChange={(e) => setSynopsis(e.target.value)}></textarea>
                 </div>
                 <div>
                     <label>Your Review:</label>
                     <br></br>
-                    <textarea type="text" name="review" onChange={(e) => setReview(e.target.value)}></textarea>
+                    <textarea type="text" name="review" value={review} onChange={(e) => setReview(e.target.value)}></textarea>
                 </div>
                 <div>
                     <label>Your Score:</label>
-                    <input type="text" name="score" placeholder="1-5" onChange={(e) => setScore(e.target.value)}></input>
+                    <input type="text" name="score" value={score} placeholder="1-5" onChange={(e) => setScore(e.target.value)}></input>
                 </div>
                 <button type="submit">Add Review</button>
             </form>

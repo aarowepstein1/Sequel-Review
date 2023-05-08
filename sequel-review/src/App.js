@@ -24,13 +24,13 @@ function App() {
     <div id='app'>
       <Navbar/>
       <Switch>
-        <Route path="/reviews">
+        <Route exact path="/reviews">
           <ReviewsContainer movies={movies}/>
         </Route>
-        <Route path="/newReview">
+        <Route path="/reviews/new">
           <NewReview onAddReview={handleAddReview}/>
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>
